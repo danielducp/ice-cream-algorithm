@@ -15,9 +15,7 @@ namespace ice_cream_algorithm
                 int n = 0;
                 while (n < 3)
                 {
-
                     Console.WriteLine("Please select your favourite flavour ice cream by pressing the corresponding number: \n 1) Strawberry \n 2) Neapolitan \n 3) Chocolate");
-
                     int selection = Convert.ToInt32(Console.ReadLine());
                     switch (selection)
                     {
@@ -44,21 +42,15 @@ namespace ice_cream_algorithm
                 if (f== differentflavours.Length)
                 {
                     allPeopleSaidYes = true;
-                }
-                  
+                }        
                 numberoftries--;
                 if (numberoftries < 3)
                 {
                     Console.WriteLine("You have failed too many times to get the same flavour \n The program is now closing");
-          
                 }
-
             } while (!allPeopleSaidYes);
             
-            Console.WriteLine("All of the participents have picked {0}", differentflavours[0]);
-
-            Console.ReadKey(true);
-           
+            Console.WriteLine("All of the participents have picked {0}", differentflavours[0]);             
         }
     }
 }
